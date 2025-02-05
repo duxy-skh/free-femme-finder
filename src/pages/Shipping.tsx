@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/components/ui/use-toast";
 
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxdD4k1FI88ZZl96PeLNPb9J3o7jNzTz2PrbU87lv8T0YoZphOFvDfUzh6gMf7m8zGc/exec";
 
 const Shipping = () => {
   const { toast } = useToast();
@@ -38,6 +38,12 @@ const Shipping = () => {
         title: "Order Completed!",
         description: "Thank you for your order. We'll process it right away!",
       });
+
+      // Trigger content locker after successful submission
+      if (window.dwdFP_HYI_jtEsDc) {
+        // @ts-ignore - content locker global variable
+        window.CPABuildLock();
+      }
     } catch (error) {
       console.error('Submission error:', error);
       toast({
