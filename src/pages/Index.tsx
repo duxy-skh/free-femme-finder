@@ -4,33 +4,33 @@ import ProductCard from "@/components/ProductCard";
 const products = [
   {
     title: "Sephora Favorits - Dare to relax",
-    image: "/images/sephora.avif",
+    image: "/sephora.avif",
     description: "For the start of the year, Sephora Favorites is offering you a wellness box to start the year 2025"
   },
   {
-    title: "Vitamin C Serum",
-    image: "/placeholder.svg",
-    description: "Brightening serum for radiant skin"
+    title: "MyProtein - Women’s Fat Loss Bundle",
+    image: "/myprotein.avif",
+    description: "Introducing the Women’s Fat Loss Bundle, a collection of products scientifically selected to help you get the most out of your New Year cut!"
   },
   {
-    title: "Hydrating Mask",
-    image: "/placeholder.svg",
-    description: "Deep hydration treatment for all skin types"
+    title: "MethodProducts - Body Wash",
+    image: "/methodproducts",
+    description: "balance your day with method’s berry balance body wash."
   },
   {
-    title: "Eye Cream",
-    image: "/placeholder.svg",
-    description: "Reduces dark circles and puffiness"
+    title: "Kinnd - Nail Polish Set",
+    image: "/kinnd.webp",
+    description: "Nails – Your Ultimate Quick Dry Nail Polish Collection"
   },
   {
-    title: "Night Cream",
-    image: "/placeholder.svg",
-    description: "Overnight repair and rejuvenation"
+    title: "Give Me Cosmetics - The Full Haircare Set",
+    image: "/givemecosmetics.webp",
+    description: "Repair & Restore Dry, Damaged Hair with our most nourishing Haircare!"
   },
   {
-    title: "Facial Cleanser",
-    image: "/placeholder.svg",
-    description: "Gentle daily cleanser for sensitive skin"
+    title: "AlyaSkin - Supercharged Skincare Bundle",
+    image: "/alyaskin.webp",
+    description: "Supercharge your skin care routine with this bundle of our absolute favourite products!"
   }
 ];
 
