@@ -14,7 +14,7 @@ const products = [
   },
   {
     title: "MethodProducts - Body Wash",
-    image: "/methodproducts",
+    image: "/methodproducts.jpg",
     description: "balance your day with method’s berry balance body wash."
   },
   {
