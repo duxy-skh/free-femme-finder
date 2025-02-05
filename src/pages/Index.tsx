@@ -3,9 +3,9 @@ import ProductCard from "@/components/ProductCard";
 
 const products = [
   {
-    title: "Luxury Face Cream",
-    image: "/placeholder.svg",
-    description: "Premium anti-aging formula with natural ingredients"
+    title: "Sephora Favorits - Dare to relax",
+    image: "images/sephora.avif",
+    description: "For the start of the year, Sephora Favorites is offering you a wellness box to start the year 2025"
   },
   {
     title: "Vitamin C Serum",
