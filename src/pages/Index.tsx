@@ -4,7 +4,7 @@ import ProductCard from "@/components/ProductCard";
 const products = [
   {
     title: "Sephora Favorits - Dare to relax",
-    image: "sephora.aviff",
+    image: "/sephora.aviff",
     description: "For the start of the year, Sephora Favorites is offering you a wellness box to start the year 2025"
   },
   {
