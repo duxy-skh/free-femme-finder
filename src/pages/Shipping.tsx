@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/components/ui/use-toast";
 
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec";
+
 const Shipping = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
@@ -14,14 +16,38 @@ const Shipping = () => {
     zip: "",
     country: ""
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically submit the form data to your backend
-    toast({
-      title: "Order Completed!",
-      description: "Thank you for your order. We'll process it right away!",
-    });
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors', // Required for Google Apps Script
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
+
+      // Since we're using no-cors, we can't actually check the response
+      // We'll assume success if no error was thrown
+      toast({
+        title: "Order Completed!",
+        description: "Thank you for your order. We'll process it right away!",
+      });
+    } catch (error) {
+      console.error('Submission error:', error);
+      toast({
+        title: "Error",
+        description: "There was a problem submitting your order. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -92,8 +118,12 @@ const Shipping = () => {
             />
           </div>
           
-          <Button type="submit" className="w-full bg-secondary hover:bg-secondary/90">
-            Complete Order
+          <Button 
+            type="submit" 
+            className="w-full bg-secondary hover:bg-secondary/90"
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? "Processing..." : "Complete Order"}
           </Button>
         </form>
       </div>
