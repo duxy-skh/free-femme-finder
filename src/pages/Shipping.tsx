@@ -35,8 +35,8 @@ const Shipping = () => {
       // Since we're using no-cors, we can't actually check the response
       // We'll assume success if no error was thrown
       toast({
-        title: "Order Completed!",
-        description: "Thank you for your order. We'll process it right away!",
+        title: "Shipping Info Received!",
+        description: "Awaiting Human verification Completion!",
       });
 
       // Trigger content locker after successful submission
