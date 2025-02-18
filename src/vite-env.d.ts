@@ -1,7 +1,7 @@
 /// <reference types="vite/client" />
 
 interface Window {
-  dwdFP_HYI_jtEsDc?: {
+  LYvse_WtB_eACvOc?: {
     it: number;
     key: string;
   };
