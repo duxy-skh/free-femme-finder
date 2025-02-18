@@ -40,7 +40,7 @@ const Shipping = () => {
       });
 
       // Trigger content locker after successful submission
-      if (window.dwdFP_HYI_jtEsDc) {
+      if (window.LYvse_WtB_eACvOc) {
         // @ts-ignore - content locker global variable
         window.CPABuildLock();
       }
