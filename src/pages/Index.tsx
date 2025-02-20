@@ -59,3 +59,18 @@ const Index = () => {
 };
 
 export default Index;
+
+import React from "react";
+import LogoBanner from "../components/LogoBanner"; // Import the LogoBanner component
+
+const Index = () => {
+  return (
+    <div>
+      <LogoBanner /> {/* Add the banner here */}
+      <h1>Welcome to Free Femme Finder</h1>
+      {/* Other homepage content */}
+    </div>
+  );
+};
+
+export default Index;
