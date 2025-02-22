@@ -5,8 +5,9 @@ const SponsorScroller = () => {
     "/sponsors/tiktok.svg",
     "/sponsors/myprotein.png",
     "/sponsors/method.png",
-    "/sponsors/maybelline-logo.png",
-    "/sponsors/nyx-logo.png",
+    "/sponsors/kinnd.png",
+    "/sponsors/giveme.png",
+    "/sponsors/alyaskin.png",
   ];
 
   return (
