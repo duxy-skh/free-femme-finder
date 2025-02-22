@@ -14,7 +14,7 @@ const SponsorScroller = () => {
     <div className="w-full py-8 overflow-hidden bg-white">
       <p className="text-center text-lg font-semibold text-purple-600 mb-6">Sponsored By</p>
       <div className="relative">
-        <div className="flex md:animate-[scroll_15s_linear_infinite] animate-[scroll_10s_linear_infinite] hover:[animation-play-state:paused]">
+        <div className="flex md:animate-[scroll_5s_linear_infinite] animate-[scroll_7s_linear_infinite] hover:[animation-play-state:paused]">
           {[...sponsors, ...sponsors].map((logo, index) => (
             <div
               key={index}
