@@ -22,7 +22,7 @@ const SponsorScroller = () => {
               <img
                 src={logo}
                 alt="Sponsor Logo"
-                className="h-12 w-auto grayscale hover:grayscale-0 transition-all"
+                className="h-16 w-auto grayscale hover:grayscale-0 transition-all"
               />
             </div>
           ))}
@@ -33,4 +33,3 @@ const SponsorScroller = () => {
 };
 
 export default SponsorScroller;
-
