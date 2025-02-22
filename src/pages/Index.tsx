@@ -1,5 +1,7 @@
+
 import AnnouncementBanner from "@/components/AnnouncementBanner";
 import ProductCard from "@/components/ProductCard";
+import SponsorScroller from "@/components/SponsorScroller";
 
 const products = [
   {
@@ -8,14 +10,14 @@ const products = [
     description: "For the start of the year, Sephora Favorites is offering you a wellness box to start the year 2025"
   },
   {
-    title: "MyProtein - Women’s Fat Loss Bundle",
+    title: "MyProtein - Women's Fat Loss Bundle",
     image: "/myprotein.avif",
-    description: "Introducing the Women’s Fat Loss Bundle, a collection of products scientifically selected to help you get the most out of your New Year cut!"
+    description: "Introducing the Women's Fat Loss Bundle, a collection of products scientifically selected to help you get the most out of your New Year cut!"
   },
   {
     title: "MethodProducts - Body Wash",
     image: "/methodproducts.jpg",
-    description: "balance your day with method’s berry balance body wash."
+    description: "balance your day with method's berry balance body wash."
   },
   {
     title: "Kinnd - Nail Polish Set",
@@ -39,6 +41,7 @@ const Index = () => {
     <div className="min-h-screen bg-gray-50">
       <AnnouncementBanner />
       <main className="container mx-auto px-4 py-8">
+        <SponsorScroller />
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text">
             Exclusive Beauty Products
@@ -59,3 +62,4 @@ const Index = () => {
 };
 
 export default Index;
+
