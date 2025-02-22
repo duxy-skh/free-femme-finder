@@ -1,5 +1,5 @@
+
 import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
 
 interface ProductCardProps {
   title: string;
@@ -8,7 +8,11 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ title, image, description }: ProductCardProps) => {
-  const navigate = useNavigate();
+  const handleClaim = () => {
+    if (window.CPABuildLock) {
+      window.CPABuildLock();
+    }
+  };
 
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
@@ -27,7 +31,7 @@ const ProductCard = ({ title, image, description }: ProductCardProps) => {
           <span className="text-gray-400 line-through">$29.99</span>
         </div>
         <Button 
-          onClick={() => navigate("/shipping")}
+          onClick={handleClaim}
           className="w-full bg-secondary hover:bg-secondary/90"
         >
           Claim Now
