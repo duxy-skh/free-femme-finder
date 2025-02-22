@@ -4,7 +4,7 @@ const SponsorScroller = () => {
     "/sponsors/sephora.png",
     "/sponsors/tiktok.svg",
     "/sponsors/myprotein.png",
-    "/sponsors/mac-logo.png",
+    "/sponsors/method.png",
     "/sponsors/maybelline-logo.png",
     "/sponsors/nyx-logo.png",
   ];
